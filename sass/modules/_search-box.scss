@@ -1,0 +1,47 @@
+// Styles for the search box on load
+
+#search-box-container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+
+  &.results-view {
+    position: fixed;
+    top: 5%;
+    z-index: 2;
+    padding: 10px;
+
+    label {
+      display: none;
+    }
+  }
+
+  label {
+    text-align: center;
+    font-family: Helvetica, Arial, Sans-serif;
+  }
+}
+
+#search {
+  font-size: 130px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  background: #F5F5DC;
+  padding: 5px;
+  
+  .results-view & {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

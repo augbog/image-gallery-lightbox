@@ -1,0 +1,92 @@
+// Styles for the lightbox including modal backdrop
+
+.lightbox-modal-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  transition: opacity 0.5s ease-in 0s;
+  z-index: 3;
+}
+
+.lightbox-gallery-container {
+  position: fixed;
+  margin: auto;
+  z-index: 5;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 80%;
+  height: 80%;
+  color: white;
+}
+
+// for screen readers
+.hide-text {
+  position: relative;
+  text-indent: -99999px;
+  display: inline-block;
+}
+
+.lightbox-button {
+  position: absolute;
+  width: 0; 
+  height: 0; 
+
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  top: 50%;
+  transform: translate(-50%);
+  
+  -webkit-transition: all 0.2s ease-in-out 0s; 
+  tranistion: all 0.2s ease-in-out 0s;
+}
+
+#current-image {
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  height: 80%;
+  max-width: 100%;
+}
+
+#current-image-title {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#previous-button {
+  border-right: 30px solid white;
+  left: 40px;
+}
+
+#next-button {
+  border-left: 30px solid white;
+  right: 10px;
+}
+
+#close-button {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  font-family: Helvetica, Arial, Sans-serif;
+  font-weight: 400;
+  color: white;
+  width: 20px;
+  height: 20px;
+}

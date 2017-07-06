@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lightbox Demo</title>
+  <link rel="stylesheet" href="build/css/styles.css">
+</head>
+<body>
+  <div id="lightbox-modal" class="lightbox-modal-backdrop">
+    <a href="#" id="previous-button" class="lightbox-button hide-text">Previous</a>
+    <a href="#" id="next-button" class="lightbox-button hide-text">Next</a>
+    <div class="lightbox-gallery-container">
+      <div id="close-button">
+        <div class="X">X</div>
+        <span class="hide-text">Close</span>
+      </div>
+      <div class="current-image-container">
+        <img src="#" alt="" id="current-image" />
+        <p id="current-image-title"></p>
+      </div>
+    </div>
+  </div>
+  <div id="search-box-container">
+    <label for="search">Start your image adventure</label>
+    <input type="text" id="search" name="search" autocomplete="off" autofocus />
+  </div>
+  <div class="search-results-container">
+    <div id="search-results"></div>
+  </div>
+</body>
+<script src="build/js/main.min.js"></script>
+</html>

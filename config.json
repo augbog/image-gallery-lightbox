@@ -1,0 +1,5 @@
+{
+  "searchEngineId" : "",
+  "apiKey" : "",
+  "urlSearch" : "https://www.googleapis.com/customsearch/v1?q={QUERY}&cx={SEARCH_ENGINE_ID}&searchType=image&start={START_INDEX}&key={YOUR_API_KEY}"
+}

@@ -1,0 +1,16 @@
+.search-results-container {
+  position: relative;
+  margin: auto;
+  max-width: 1600px;
+  padding: 0px 25px 0px 25px;
+}
+
+.search-image {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
